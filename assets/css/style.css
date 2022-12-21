@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+    --color-body: #b6cbcb;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #1a1a1a;
+    --font-base: "Roboto";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://cdn.shopify.com/s/files/1/0555/9500/8100/files/lolibg.gif?v=1669539159");
+    background-size: cover;
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 0.1em;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #c6b55e;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+@media (orientation: landscape) {
+nav {
+    background: linear-gradient(0deg,transparent,#bb1158a6);
+    justify-content: center;
+    padding-bottom: 1vw;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    font-size: 1.5vw;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+}
+    
+
+.home {
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: block;
+}
+
+.home .banner {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.home .banner .banner_left {
+    background: linear-gradient(90deg,transparent,#bb1158a6);
+    flex-grow: 1;
+}
+
+
+.home .banner .banner_middle {
+    background: #bb1158a6;
+    padding: 2vh 0;
+}
+
+.home .banner .banner_middle {
+    align-items: center;
+    display: flex;
+    flex-basis: 60vw;
+}
+
+.home .banner .banner_right {
+    background: linear-gradient(270deg,transparent,#bb1158a6);
+    flex-grow: 1;
+}
+
+.home .banner .banner_middle h1 {
+    border-bottom: 2pxsolidhsla(0,0%,100%,.8);
+    font-size: 4.6vw;
+    font-weight: lighter;
+    letter-spacing: -.1vw;
+    padding-bottom: 2vh/2;
+}
+
+.home .banner .banner_middle a img {
+    margin-left: 10vh;
+    height: 32vh;
+    width: 32vh;
+}
+
+.home .banner .banner_middle img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px  #440821a6;
+    display: block;
+}
+
+
+.home .banner .banner_middle header {
+    padding-left: 3vh;
+
+}
+
+.home .banner .banner_middle p {
+    font-size: 2.4vw;
+    padding-top: 2vh/2;
+}
+
+.work {
+    background-color: #1a1a1a;
+}
+
+section h2 {
+    color: #c6b55e;
+    flex-basis: 100%;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+.work-work {
+    flex-basis: calc(50% - 0.5vw);
+    background: rgba(0,0,0,.5);
+    justify-content: space-evenly;
+    margin-bottom: 1vw;
+    padding: 1vw;
+
+}
+
+.shadow-drop {
+    transition: all 0.5s;
+}
+
+.shadow-drop:hover {
+    box-shadow: -6px 6px 0 0 #c6b55e;
+}
+
+.col-md-4 .work-work {
+    min-height: 15vw;
+    min-width: 20vw;
+    
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #c6b55e;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+.work-work h4 p {
+    flex-basis: 67%;
+}
+
+ .work-work img {
+    flex-basis: 40%;
+    border-radius: 1.5vw;
+    box-shadow: 0 0 0 4px #1a1a1a;
+    display: block;
+    width: 100%;
+
+} 
