@@ -222,7 +222,6 @@ section h2 {
 
 section .container .seeMore {
     background: #000000a6;
-    
     border-radius: 8vw;
     padding: 0.5vw;
     text-align: center;
@@ -234,17 +233,3 @@ section .container .seeMore a {
     font-size: 1.3vw;
  
 }
-
-.button_container{
-    display: flex;
-    justify-content: center;
-}
-  
-  input[type="button"] {
-
-    background-color: #000000a6;
-    color: #c6b55e;
-    border-radius: 8vw;
-    padding: 10px 20px;
-    font-size: 1.3vw;
-  }
