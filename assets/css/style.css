@@ -45,7 +45,7 @@ a:hover {
 
 @media (orientation: landscape) {
 nav {
-    background: linear-gradient(0deg,transparent,#bb1158a6);
+    background: linear-gradient(0deg,transparent,#000000a6);
     justify-content: center;
     padding-bottom: 1vw;
     }
@@ -71,7 +71,7 @@ nav {
     
 
 .home {
-    background-image: url("https://cdn.shopify.com/s/files/1/0555/9500/8100/files/lolibg.gif?v=1669539159");
+    background-image: url(./a);
     background-size: cover;
     align-items: center;
 }
@@ -233,3 +233,15 @@ section .container .seeMore a {
     font-size: 1.3vw;
  
 }
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
