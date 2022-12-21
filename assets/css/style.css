@@ -15,8 +15,7 @@
 }
 
 body {
-    background-image: url("https://cdn.shopify.com/s/files/1/0555/9500/8100/files/lolibg.gif?v=1669539159");
-    background-size: cover;
+
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
     
@@ -72,6 +71,8 @@ nav {
     
 
 .home {
+    background-image: url("https://cdn.shopify.com/s/files/1/0555/9500/8100/files/lolibg.gif?v=1669539159");
+    background-size: cover;
     align-items: center;
 }
 
@@ -83,6 +84,7 @@ section {
 main {
     display: block;
 }
+
 
 .home .banner {
     display: flex;
@@ -121,8 +123,7 @@ main {
 
 .home .banner .banner_middle a img {
     margin-left: 10vh;
-    height: 32vh;
-    width: 32vh;
+
 }
 
 .home .banner .banner_middle img {
@@ -143,6 +144,7 @@ main {
 }
 
 .work {
+
     background-color: #1a1a1a;
 }
 
@@ -158,7 +160,7 @@ section h2 {
 
 .work-work {
     flex-basis: calc(50% - 0.5vw);
-    background: rgba(0,0,0,.5);
+    background: #000000a6;
     justify-content: space-evenly;
     margin-bottom: 1vw;
     padding: 1vw;
@@ -199,6 +201,8 @@ section h2 {
     width: 100%;
 }
 
+
+
 .work-work h4 p {
     flex-basis: 67%;
 }
@@ -206,8 +210,41 @@ section h2 {
  .work-work img {
     flex-basis: 40%;
     border-radius: 1.5vw;
-    box-shadow: 0 0 0 4px #1a1a1a;
+    box-shadow: 0 0 0 4px #c6b55e;
     display: block;
     width: 100%;
 
 } 
+
+.container {
+    margin-top: 3vw;
+}
+
+section .container .seeMore {
+    background: #000000a6;
+    
+    border-radius: 8vw;
+    padding: 0.5vw;
+    text-align: center;
+
+}
+
+section .container .seeMore a {
+    text-align: center;
+    font-size: 1.3vw;
+ 
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+}
+  
+  input[type="button"] {
+
+    background-color: #000000a6;
+    color: #c6b55e;
+    border-radius: 8vw;
+    padding: 10px 20px;
+    font-size: 1.3vw;
+  }
