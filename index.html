@@ -8,22 +8,25 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script> $(function() { AOS.init(); }); </script>
 </head>
 <body>
 
 <!--Navbar-->
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark nav-">
-    <div  style="margin: auto;">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+  <div  style="margin: auto;">
+
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav menu me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -56,7 +59,7 @@
     </div>
   </nav>
 
-  <main style="overflow: hidden;">
+  <main>
 
     <!--HOME-->
     <section class="home"  style="min-height: 939px;" >
@@ -66,12 +69,12 @@
        <div class="banner">
         <div class="banner_left"></div>
         <div class="banner_middle">
-            <a>
+            <a data-aos="fade-right" data-aos-delay="500">
                 <img alt="Jakub Pasik" src="./assets/images/6ec73ccd2150eb5bc68abb02056ba44c.jpg">
             </a>    
-                <header>
-                    <h1>Jakub Pasik</h1>
-                    <p>
+                <header class="display-4 fw-bold">
+                    <h1 data-aos="fade-up" data-aos-delay="500">Jakub Pasik</h1>
+                    <p data-aos="fade-up" data-aos-delay="550">
                         Student at
                         <strong>Collegium Da Vinci</strong>
                         
@@ -95,9 +98,22 @@
 
             </div>
         
-				<div class="row">
-					
-					<div class="col-md-4">
+				<div class="row" >
+          
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+						
+						<div  class="work-work rounded-4 shadow-drop">
+							<div class="imgbox mb-4">
+								<img src="./assets/images/calcimg.jpg">
+							</div>
+							<h4>Pierwsza praca</h4>
+							<p>Super ultra szybki kalkulator jd2000 500</p>
+							<a href="#" class="link-custom">Preview</a>
+							
+						</div>
+					</div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
 						
 						<div class="work-work rounded-4 shadow-drop">
 							<div class="imgbox mb-4">
@@ -110,21 +126,8 @@
 						</div>
 					</div>
 
-          <div class="col-md-4">
-						
-						<div class="work-work rounded-4 shadow-drop">
-							<div class="imgbox mb-4">
-								<img src="./assets/images/calcimg.jpg">
-							</div>
-							<h4>Pierwsza praca</h4>
-							<p>Super ultra szybki kalkulator jd2000 500</p>
-							<a href="#" class="link-custom">Preview</a>
-							
-						</div>
-					</div>
 
-
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="750">
 						
 						<div class="work-work rounded-4 shadow-drop">
 							<div class="imgbox mb-4">
@@ -144,7 +147,7 @@
 				
 
 
-        <div class="seeMore ">
+        <div class="seeMore" data-aos="fade-up" data-aos-delay="800">
           <a target="_blank" rel="nofollow noopener" href="https://github.com/q0ney?tab=repositories" class="link-custom" >Zobacz wiecej...</a>
         </div>
 
