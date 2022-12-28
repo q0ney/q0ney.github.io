@@ -14,8 +14,12 @@
     padding: 0;
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 body {
-    color: var(--color-body);
+    color: #fff;
     font-family: var(--font-base), sans-serif;
     
 }
@@ -34,23 +38,36 @@ a:hover {
 
 @media (orientation: landscape) {
 nav {
+    
     background: linear-gradient(0deg,transparent,#000000);
-    align-items: center;
+    justify-content: center;
     padding-bottom: 1vw;
     }
 }
 
+@media (orientation: landscape) {
+    .menu {
+        border-bottom: 2px #fff;
+    }
+}
+
 @media (orientation: portrait){
-nav  .menu {
+nav .menu {
     background: rgba(0,0,0,.7);
     flex-direction: column;
     left: 0;
     padding: 8vw 0vw 5vw 1vw;
     position: fixed;
-    top: 3.5vw;
+    top: 0;
     width: 100%;
     z-index: -1;
 }
+}
+
+nav .menu {
+    display: flex;
+    flex-basis: 60vw;
+    justify-content: center;
 }
 
 
@@ -64,10 +81,16 @@ nav  .menu {
     z-index: 99;
 }
 
-nav {
-    margin: auto;
+.menu_button {
+    font-size: 2vh;
+    padding: 0;
+  
+}
+
+
+nav {  
     display: flex;
-    font-size: 1.5vw;
+    font-size: 3vh;
     left: 0;
     position: fixed;
     top: 0;
@@ -131,6 +154,8 @@ main {
     flex-grow: 1;
 }
 
+
+
 .home .banner .banner_middle h1 {
     color: #ffffff;
     font-size: 4.6vw;
@@ -139,10 +164,6 @@ main {
     padding-bottom: 2vh/2;
 }
 
-.home .banner .banner_middle a img {
-    margin-left: 10vh;
-
-}
 
 .home .banner .banner_middle img {
     border-radius: 50%;
@@ -182,6 +203,7 @@ section h2 {
     flex-basis: calc(50% - 0.5vw);
     background: #000000a6;
     justify-content: space-evenly;
+    text-align: center;
     margin-bottom: 1vw;
     padding: 1vw;
 
@@ -220,7 +242,6 @@ section h2 {
 .link-custom:hover::after {
     width: 100%;
 }
-
 
 
 .work-work h4 p {
