@@ -165,7 +165,13 @@ main {
 }
 
 
+.home .banner .banner_middle a img {
+    height: 32vh;
+    width: 32vh;
+}
+
 .home .banner .banner_middle img {
+    align-items: center;
     border-radius: 50%;
     box-shadow: 0 0 0 4px  #c6b55e;
     display: block;
@@ -174,7 +180,6 @@ main {
 
 .home .banner .banner_middle header {
     padding-left: 3vh;
-
 }
 
 .home .banner .banner_middle p {
@@ -258,6 +263,7 @@ section h2 {
 } 
 
 .container {
+
     margin-top: 3vw;
 }
 
