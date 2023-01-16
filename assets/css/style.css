@@ -64,6 +64,24 @@ nav .menu {
 }
 }
 
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: #c6b55e;
+    border-color: #c6b55e;
+    color: #1a1a1a;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #8b7c31;
+    color: #1a1a1a;
+    border-color: #8b7c31;
+}
+
 nav .menu {
     display: flex;
     flex-basis: 60vw;
@@ -197,7 +215,7 @@ main {
 section h2 {
     color: #c6b55e;
     flex-basis: 100%;
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 400;
     margin-top: 4vw;
     margin-bottom: 1vw;
@@ -281,9 +299,17 @@ section .container .seeMore a {
  
 }
 
+.about-me-bg {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("/assets/images/annie-spratt-FSFfEQkd1sc-unsplash.jpg");
+    background-size: cover;
+    
+}
+
 .about-me {
     flex-basis: calc(50% - 0.5vw);
-    background: #00000054;
+    background: #0000009f;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 1vw;
@@ -311,3 +337,23 @@ h5 {
 .contact {
     background-color: #1a1a1a;
 }
+
+.form-control {
+    background-color: var(--color-base2);
+    border-color: #c6b55e;
+    color: var(--color-body);
+}
+
+.form-control:focus {
+    border-color: #c6b55e;
+    box-shadow: none;
+}
+
+ .form-control::placeholder {
+    color: var(--color-body);
+}
+
+input.form-control {
+    height: 44px;
+}
+
