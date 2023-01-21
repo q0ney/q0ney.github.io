@@ -59,7 +59,7 @@
   <main>
 
     <!--HOME-->
-    <section class="home"  style="min-height: 974px;" >
+    <section class="home"  style="min-height: 958px;" >
     
       <video id="background-video" autoplay loop muted >
         <source src="./assets/images/180626_12_Seocho-Dong_20.mp4" type="video/mp4">
@@ -80,6 +80,7 @@
                     </p>
                 </header>
             
+                
         </div>
         <div class="banner_right"></div>
        </div>
@@ -197,7 +198,7 @@
 
      </section>
 
-     <section id="Contact" class="contact" style="min-height: 974px;">
+     <section id="Contact" class="contact" style="min-height: 954px;">
       
       
       <div class="container">
@@ -207,7 +208,7 @@
               <h3>Interested? Write to me via email or discord</h3>
             </div>
           <div class="col-lg-8">
-            <form action="https://formsubmit.co/qoneybuisness@gmail.com" method="POST" class="row g-lg-3 gy-3">
+            <form method="POST" class="row g-lg-3 gy-3">
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Enter your name">
               </div>
@@ -220,29 +221,63 @@
               <div class="form-group col-12">
                 <textarea name="" rows="6" class="form-control" placeholder="Enter your message"></textarea>
               </div>
-              <div class="form-group col-12 d-grid">
-                <button type="submit" class="btn btn-brand">Contact me</button>
-              </div>
+              
             </form>
+            <div class="col-12 d-grid mt-3">
+                <button type="submit" class="btn btn-brand" onclick="openPopup()">Contact me</button>
+
+
+                <div class="popup" id="popup">
+                  <h2>Thank You!</h2>
+                  <p>Your email has been successfully send. Thanks for contacting me!</p>
+                  <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                </div>
+              </div>
           </div>
         </div>
-
-
 
           
 
       </div>
 
-
-
+      
+      <div class="footer fixed-bottom">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+                <p class="mb-0">&copy; Copyright 2023,<a href="#https://github.com/q0ney" class="fw-bold"> q0ney</a></p>
+            </div>
+            <div class="col-auto">
+                <div class="social-icons">
+                    <a href="#"><i class="lab la-twitter"></i></a>
+                    <a href="#"><i class="lab la-instagram"></i></a>
+                    <a href="#"><i class="lab la-dribbble"></i></a>
+                    <a href="#"><i class="lab la-github"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+  
+      
    </section>
+   
 
 
 
   </main>
 
 
-
+  <script>
+    let popup = document.getElementById("popup");
+    
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+    
+    function closePopup(){
+      popup.classList.remove("open-popup");
+    }
+    </script>
 
 
 

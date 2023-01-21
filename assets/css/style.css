@@ -19,6 +19,7 @@ html,body{
 }
 
 body {
+    background-color: #1a1a1a;
     color: #fff;
     font-family: var(--font-base), sans-serif;
     
@@ -120,7 +121,7 @@ nav {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -336,6 +337,7 @@ h5 {
 
 .contact {
     background-color: #1a1a1a;
+    position: relative;
 }
 
 .form-control {
@@ -356,4 +358,73 @@ h5 {
 input.form-control {
     height: 44px;
 }
+input:focus {
+    background: transparent;
+}
 
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transfrom 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #c6b55e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-icons {
+    
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000023;
+    border-radius: 100px;
+    font-size: 24px;
+}
