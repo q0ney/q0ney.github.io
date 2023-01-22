@@ -14,6 +14,9 @@
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/main.js"></script>
   <script> $(function() { AOS.init(); }); </script>
+  <script>
+    document.getElementById("home").style.minHeight = screen.height - 10  +"px";
+</script>
 </head>
 <body>
 
@@ -39,15 +42,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#Contact">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Socials
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Github</a></li>
-              <li><a class="dropdown-item" href="#">Instagram</a></li>
-              <li><a class="dropdown-item" href="#">Twitter</a></li>
-              <li><a class="dropdown-item" href="#">Linkedin</a></li>
+
  
            
 
@@ -59,7 +54,7 @@
   <main>
 
     <!--HOME-->
-    <section class="home"  style="min-height: 958px;" >
+    <section class="home" style="min-height: 950px;">
     
       <video id="background-video" autoplay loop muted >
         <source src="./assets/images/180626_12_Seocho-Dong_20.mp4" type="video/mp4">
@@ -89,7 +84,7 @@
     <!--HOME-->
 
 	  <!--PORTFOLIO-->
-    <section id="Work" class="work" style="min-height: 974px;">
+    <section id="Work" class="work" style="min-height: 950px;">
         <div class="container">
 
             <div class="row pb-4">
@@ -159,27 +154,28 @@
     </section>
     <!--PORTFOLIO-->
 
-    <section id="About" class="about-me-bg" style="min-height: 974px;">
+    <section id="About" class="about-me-bg" style="min-height: 950px;">
       
       
+
         <div class="container">
           <div class="row pb-4">
             <h2>About me</h2>
           </div>
             <div  data-aos="fade-up" data-aos-delay="500">
 
-              <div class="about-me rounded-5">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime </p>
+              <div class="about-me heavy rounded-5 mb-2">
+                <p>I am a beginner web developer and a student at Collegium da Vinci. I am currently learning the skills and technologies necessary to build and design websites. I am excited to continue my education and gain more experience in this field. I am currently learning the basics of HTML, CSS, and JavaScript, as well as other web development tools and frameworks. I am also familiar with different web design principles, and I am eager to apply them in my future projects.</p>
               </div>
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                     <div class=" about-me rounded-5">
                       <h5>GENERAL</h5>
                       <p>HTML5 CSS JavaScript </p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about-me rounded-5">
+                    <div class="about-me rounded-5 mb-2">
                       <h5>TOOLS</h5>
                       <p>Git Linux PostgreSQL</p>
                     </div>
@@ -198,7 +194,7 @@
 
      </section>
 
-     <section id="Contact" class="contact" style="min-height: 954px;">
+     <section id="Contact" class="contact" style="min-height: 950px;">
       
       
       <div class="container">
@@ -242,7 +238,7 @@
       </div>
 
       
-      <div class="footer fixed-bottom">
+      <div class="footer">
         <div class="row gy-4 justify-content-between">
             <div class="col-auto">
                 <p class="mb-0">&copy; Copyright 2023,<a href="#https://github.com/q0ney" class="fw-bold"> q0ney</a></p>

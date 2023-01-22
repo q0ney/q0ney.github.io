@@ -304,33 +304,50 @@ section .container .seeMore a {
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), url("/assets/images/annie-spratt-FSFfEQkd1sc-unsplash.jpg");
+      /* Add the blur effect */
     background-size: cover;
-    
+
 }
 
 .about-me {
     flex-basis: calc(50% - 0.5vw);
-    background: #0000009f;
+    background: #000000d0;
     justify-content: space-evenly;
-    align-items: center;
+    text-align: center;
     margin-bottom: 1vw;
-    padding: 1vw;
+    padding: 13px;
     
+}
+
+.about-me.heavy {
+    text-align: justify;
+    padding-left: 2vw;
+    position: relative;
+}   
+
+.about-me.heavy:after {
+    border-left: 5px solid #c6b55e;
+    border-radius: 4px;
+    content: " ";
+    height: calc(100% - 2vw);
+    position: absolute;
+    top: 1vw;
 }
 
 .about-me p {
     padding-left: 2vw;
     position: relative;
-    text-align: justify;
     margin-bottom: 0.2vw;
-    
+    font-size: 22px;
 }
 
 .col-md-6 .about-me p {
     word-spacing: 25px;
 }
 
-h5 {
+.about-me h5 {
+    font-weight: bold;
+    font-size: 20px;
     color: #c6b55e;
 }
 
@@ -412,6 +429,7 @@ input:focus {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    bottom: 0;
 }
 
 .social-icons {
