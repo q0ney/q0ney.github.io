@@ -99,11 +99,11 @@
 						
 						<div  class="work-work rounded-4 shadow-drop mb-5">
 							<div class="imgbox m-3">
-								<img src="./assets/images/calcimg.jpg">
+								<img src="./assets/images/obiektowka.PNG">
 							</div>
-							<h4>Pierwsza praca</h4>
-							<p>Przykladowy opis pracy</p>
-							<a href="#" class="link-custom">Preview</a>
+							<h4>System zarzadzania restauracja</h4>
+							<p>Obiektowy system zarzadzania w C# (In progress)</p>
+							<a href="https://github.com/q0ney/programowanie-obiektowe" class="link-custom">Preview</a>
 							
 						</div>
 					</div>
@@ -200,11 +200,11 @@
       <div class="container">
         <div class="row justify-content-center text-center pb-4">
           <h2>Contact me</h2>
-            <div class="pb-5">
+            <div class="pb-5" data-aos="zoom-in" data-aos-delay="600ms">
               <h3>Interested? Write to me via email or discord</h3>
             </div>
           <div class="col-lg-8">
-            <form method="POST" class="row g-lg-3 gy-3">
+            <form method="POST" class="row g-lg-3 gy-3" data-aos="zoom-in" data-aos-delay="800ms">
               <div class="form-group col-md-6">
                 <input type="text" class="form-control" placeholder="Enter your name">
               </div>
@@ -219,12 +219,12 @@
               </div>
               
             </form>
-            <div class="col-12 d-grid mt-3">
+            <div class="col-12 d-grid mt-3" >
                 <button type="submit" class="btn btn-brand" onclick="openPopup()">Contact me</button>
 
 
                 <div class="popup" id="popup">
-                  <h2>Thank You!</h2>
+                  <h3>Thank You!</h2>
                   <p>Your email has been successfully send. Thanks for contacting me!</p>
                   <button type="button" onclick="closePopup()">OK</button>
                 </div>
@@ -237,23 +237,59 @@
 
       </div>
 
+
+      <button class="open-calculator" onclick="openCalculator()">Calculator<i class="las la-calculator"></i></button>
+
+      <div class="form-popup" id="myForm">
+        <form>
+          <input type="text" id="display" disabled>
+          <br>
+          <input id="number2" type="button" value="c" onclick="document.getElementById('display').value=''">
+          <input id="number2" type="button" value="%" onclick="document.getElementById('display').value+='%'">
+          <input id="number2" type="button" value="+/-" onclick="document.getElementById('display').value+='pos-neg'">
+          <input id="number1" type="button" value="/" onclick="document.getElementById('display').value+='/'">
+          <br>
+          <input id="number" type="button" value="7" onclick="document.getElementById('display').value+='7'">
+          <input id="number" type="button" value="8" onclick="document.getElementById('display').value+='8'">
+          <input id="number" type="button" value="9" onclick="document.getElementById('display').value+='9'">
+          <input id="number1" type="button" value="*" onclick="document.getElementById('display').value+='*'">
+          <br>
+          <input id="number" type="button" value="4" onclick="document.getElementById('display').value+='4'">
+          <input id="number" type="button" value="5" onclick="document.getElementById('display').value+='5'">
+          <input id="number" type="button" value="6" onclick="document.getElementById('display').value+='6'">
+          <input id="number1" type="button" value="-" onclick="document.getElementById('display').value+='-'">
+
+          <br>
+          <input id="number" type="button" value="1" onclick="document.getElementById('display').value+='1'">
+          <input id="number" type="button" value="2" onclick="document.getElementById('display').value+='2'">
+          <input id="number" type="button" value="3" onclick="document.getElementById('display').value+='3'">
+          <input id="number1" type="button" value="+" onclick="document.getElementById('display').value+='+'">
+
+          <br>
+          <input id="number0" type="button" value="0" onclick="document.getElementById('display').value+='0'">
+          <input id="number" type="button" value="." onclick="document.getElementById('display').value+='.'">
+          <input id="number1" type="button" value="=" onclick="document.getElementById('display').value=eval(document.getElementById('display').value)">
+          <br>
+          <button type="button" class="btn cancel" onclick="closeCalculator()">Close</button>
+          </form> 
+      </div>
       
       <div class="footer">
         <div class="row gy-4 justify-content-between">
             <div class="col-auto">
-                <p class="mb-0">&copy; Copyright 2023,<a href="#https://github.com/q0ney" class="fw-bold"> q0ney</a></p>
+                <p class="mb-0">&copy; Copyright 2023,<a href="https://github.com/q0ney" class="fw-bold"> q0ney</a></p>
             </div>
             <div class="col-auto">
                 <div class="social-icons">
-                    <a href="#"><i class="lab la-twitter"></i></a>
-                    <a href="#"><i class="lab la-instagram"></i></a>
-                    <a href="#"><i class="lab la-dribbble"></i></a>
-                    <a href="#"><i class="lab la-github"></i></a>
+                    <a href="https://twitter.com/q0ney"><i class="lab la-twitter"></i></a>
+                    <a href="https://www.instagram.com/q0ney_/"><i class="lab la-instagram"></i></a>
+                    <a href="https://pl.linkedin.com/in/jakub-pasik-7a829725a"><i class="lab la-linkedin"></i></a>
+                    <a href="https://github.com/q0ney"><i class="lab la-github"></i></a>
                 </div>
             </div>
         </div>
       </div>
-  
+
       
    </section>
    
@@ -261,6 +297,17 @@
 
 
   </main>
+
+
+  <script>
+    function openCalculator() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeCalculator(){
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 
 
   <script>
