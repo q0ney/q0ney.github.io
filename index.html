@@ -13,6 +13,7 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/aos.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/slider.js"></script>
   <script> $(function() { AOS.init(); }); </script>
   <script>
     document.getElementById("home").style.minHeight = screen.height - 10  +"px";
@@ -85,7 +86,7 @@
 
 	  <!--PORTFOLIO-->
     <section id="Work" class="work" style="min-height: 950px;">
-        <div class="container">
+        <div class="container" >
 
             <div class="row pb-4">
 
@@ -147,9 +148,12 @@
         </div>
 
 
-         
+        <div data-aos="fade-up" data-aos-delay="800">
+          <a class="btn btn-brand gallery-btn" target="_blank" rel="nofollow noopener" href="gallery.html" class="link-custom" >Gallery <i class="las la-external-link-alt"></i></a>
+        </div>
 
         </div>
+
 
     </section>
     <!--PORTFOLIO-->
@@ -238,7 +242,7 @@
       </div>
 
 
-      <button class="open-calculator" onclick="openCalculator()">Calculator<i class="las la-calculator"></i></button>
+    <!--  <button class="open-calculator" onclick="openCalculator()">Calculator<i class="las la-calculator"></i></button>
 
       <div class="form-popup" id="myForm">
         <form>
@@ -272,7 +276,7 @@
           <br>
           <button type="button" class="btn cancel" onclick="closeCalculator()">Close</button>
           </form> 
-      </div>
+      </div>-->
       
       <div class="footer">
         <div class="row gy-4 justify-content-between">
@@ -299,7 +303,7 @@
   </main>
 
 
-  <script>
+  <!--<script>
     function openCalculator() {
       document.getElementById("myForm").style.display = "block";
     }
@@ -307,7 +311,7 @@
     function closeCalculator(){
       document.getElementById("myForm").style.display = "none";
     }
-  </script>
+  </script>-->
 
 
   <script>
